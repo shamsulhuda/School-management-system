@@ -1,3 +1,3 @@
 # School-management-system
 This project build with laravel 6
-<span style="color: red">Under construction</span>
+<h2>Under construction</h2>
