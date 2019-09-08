@@ -103,13 +103,16 @@
                 <button type="submit" class="btn button-style-w3">Login</button>
                 <div class="row sub-w3l mt-3 mb-5">
                     <div class="col-sm-6 sub-w3layouts_hub">
-                        <input type="checkbox" id="brand1" value="">
+                        <input type="checkbox" id="brand1" name="remember" {{ old('remember') ? 'checked' : '' }}>
                         <label for="brand1" class="text-li text-style-w3ls">
                             <span></span>Remember me?</label>
                     </div>
-                    <div class="col-sm-6 forgot-w3l text-sm-right">
-                        <a href="#" class="text-li text-style-w3ls">Forgot Password?</a>
-                    </div>
+                    @if (Route::has('password.request'))
+                        <div class="col-sm-6 forgot-w3l text-sm-right">
+                            <a href="{{route('password.request')}}" class="text-li text-style-w3ls">Forgot Password?</a>
+                        </div>
+                    @endif
+                    
                 </div>
                 <p class="text-center dont-do text-style-w3ls text-li">Don't have an account?
                     <a href="{{url('register')}}" class="font-weight-bold text-li">

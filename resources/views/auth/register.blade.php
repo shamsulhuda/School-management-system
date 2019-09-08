@@ -95,7 +95,7 @@
                 </div>
                 <div class="form-group">
                     <label class="col-form-label">Email</label>
-                <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                    <input type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="example@mail.com">
 
                 @error('email')
                     <span class="invalid-feedback" role="alert">
@@ -116,14 +116,17 @@
                     <label class="col-form-label">Confirm Password</label>
                     <input type="password" class="form-control" placeholder="*****" name="password_confirmation" autocomplete="new-password" required>
                 </div>
+                
+                <button type="submit" class="btn button-style-w3">Register</button>
                 <div class="sub-w3l my-3">
                     <div class="sub-w3layouts_hub">
-                        <input type="checkbox" id="brand1" value="">
-                        <label for="brand1" class="text-li text-style-w3ls">
-                            <span></span>I Accept to the Terms & Conditions</label>
+                        <p class="text-center dont-do text-style-w3ls text-li">Already registered? 
+                            <a href="{{url('login')}}" class="font-weight-bold text-li">
+                                Login Now!
+                            </a>
+                        </p>
                     </div>
                 </div>
-                <button type="submit" class="btn button-style-w3">Register</button>
             </form>
         </div>
         <!-- //register -->
