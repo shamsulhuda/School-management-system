@@ -24,9 +24,11 @@
     <!-- //Meta tag Keywords -->
 
     <!-- Custom-Files -->
+    
     <link href="{{asset("css/bootstrap.css")}}" rel='stylesheet' type='text/css' />
-    <!-- Bootstrap-CSS -->
     <link href="{{asset('css/style.css')}}" rel='stylesheet' type='text/css' />
+    <!-- Bootstrap-CSS -->
+    
     
     <!-- Style-CSS -->
     <link href="{{asset('css/font-awesome.min.css')}}" rel="stylesheet">
@@ -36,11 +38,12 @@
     <!-- Web-Fonts -->
     <link href="//fonts.googleapis.com/css?family=Lora:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"
         rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet">
+    {{-- <link href="//fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&amp;subset=latin-ext" rel="stylesheet"> --}}
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -94,23 +97,6 @@
                                 </form>
                             </ul>
                         </li>
-                            {{-- <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li> --}}
                         @endguest
                     </ul>
                 </div>
@@ -155,18 +141,6 @@
                                         </li>
                                         <li class="list-group-item">
                                             <a class="nav-link" href="">Organization strength</a>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <a class="nav-link" href="">Organizational Role</a>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <a class="nav-link" href="">Divisions</a>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <a class="nav-link" href="">Consultancy</a>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <a class="nav-link" href="">Project Implementation</a>
                                         </li>
                                     </ul>
                                 </div>
